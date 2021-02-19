@@ -10,15 +10,7 @@ server folder
 import os
 import shutil
 
-find_folder1 = r"C:\Users\Eric\Desktop\Test_folder1"
-find_folder2 = r"C:\Users\Eric\Desktop\Test_folder2"
+find_folder1 = r"C:\Users\Eric\Desktop\Test_folder1\Test_text.txt"
+find_folder2 = r"C:\Users\Eric\Desktop\Test_folder2\Test_text.txt"
 
-desktop = os.path.join(os.environ["HOMEPATH"], "Desktop")
-
-p = os.listdir(find_folder1)
-q = os.listdir(find_folder2)
-
-print(p, q)
-# print(desktop)
-
-shutil.copy(find_folder1, find_folder2)
+os.rename(find_folder2, find_folder1)
